@@ -1,0 +1,11 @@
+service CalculatorService {
+  rpc Calculate (CalculateRequest) returns (CalculateResponse) {}
+}
+
+message CalculateResponse {
+  required string output = 1;
+}
+
+message CalculateRequest {
+  required string input = 1;
+}
